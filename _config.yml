@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "HONG KONG"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "Jiangwen's Home"
 title_separator          : "-"
 name                     : &name "Jiangwen Dong"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -27,7 +27,7 @@ author:
   name             : "Jiangwen Dong"
   pronouns         : # example: "she/her"  
   bio              : "PhD student"
-  location         : "HONG KONG"
+  location         : "Hong Kong"
   employer         : "PolyU"
   uri              : # URL
   email            : "jiangwen.dong@connect.polyu.hk" 
@@ -48,13 +48,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "Jiangwen-Dong"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  # bluesky          : "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
