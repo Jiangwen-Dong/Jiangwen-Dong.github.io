@@ -1,0 +1,366 @@
+---
+---
+
+/* ========================================
+   Design System Variables
+   ======================================== */
+
+:root {
+  --color-navy: #0a1628;
+  --color-white: #ffffff;
+  --color-teal: #00d4aa;
+  --color-text-primary: #1a1a2e;
+  --color-text-body: #334155;
+  --color-text-light: #f8fafc;
+  --color-bg-subtle: #f8fafc;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ========================================
+   Base Overrides
+   ======================================== */
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: var(--color-teal);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* ========================================
+   Masthead / Navigation
+   ======================================== */
+
+.masthead {
+  background: var(--color-white);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a {
+  color: var(--color-text-primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+}
+
+.greedy-nav a:hover {
+  color: var(--color-teal);
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+
+.hero-section {
+  background: var(--color-navy);
+  color: var(--color-text-light);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  color: var(--color-text-light);
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
+}
+
+.hero-section .subtitle {
+  font-size: 1.25rem;
+  color: rgba(248, 250, 252, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.hero-section .mission {
+  font-size: 1rem;
+  color: rgba(248, 250, 252, 0.6);
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+.hero-social-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-social-links a {
+  color: var(--color-teal);
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.hero-social-links a:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+#hero-graph-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+/* ========================================
+   Section Styles
+   ======================================== */
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-alt {
+  background: var(--color-bg-subtle);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: var(--color-text-primary);
+}
+
+/* ========================================
+   Research Cards
+   ======================================== */
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.research-card {
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.research-card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.research-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.research-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-body);
+  line-height: 1.6;
+}
+
+/* ========================================
+   Publication Cards
+   ======================================== */
+
+.pub-card {
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  gap: 1.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.pub-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.pub-venue-badge {
+  background: var(--color-teal);
+  color: var(--color-navy);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.pub-content h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: var(--color-text-body);
+  margin-bottom: 0.5rem;
+}
+
+.pub-authors .highlight {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.pub-abstract {
+  font-size: 0.9rem;
+  color: var(--color-text-body);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.pub-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.pub-links a {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ========================================
+   CV Page
+   ======================================== */
+
+.cv-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+}
+
+.cv-sidebar {
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  padding-right: 2rem;
+}
+
+.cv-sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-section h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-teal);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-teal);
+}
+
+.timeline-item {
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item .institution {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.timeline-item .degree {
+  color: var(--color-text-body);
+}
+
+.timeline-item .date {
+  font-size: 0.85rem;
+  color: rgba(51, 65, 85, 0.7);
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.page__footer {
+  background: var(--color-navy);
+  color: var(--color-text-light);
+}
+
+.page__footer a {
+  color: var(--color-teal);
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media (max-width: 1023px) {
+  .research-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cv-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  #hero-graph-canvas {
+    width: 100%;
+    opacity: 0.3;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pub-card {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section .subtitle {
+    font-size: 1rem;
+  }
+}
