@@ -1,7 +1,7 @@
 ---
 permalink: /research/
 title: "Research"
-author_profile: true
+author_profile: false
 ---
 
 I develop graph-driven multi-agent systems that enable efficient, adaptive, and distributed LLM reasoning across edge–cloud environments. My research integrates graph intelligence, multi-agent collaboration, and efficient distributed systems.
