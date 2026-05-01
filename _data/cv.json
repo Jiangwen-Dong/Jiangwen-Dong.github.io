@@ -16,7 +16,7 @@
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=Kl-dTYAAAAAJ"
       },
       {
         "network": "GitHub",
@@ -46,9 +46,27 @@
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+  {
+    "name": "Programming",
+    "keywords": ["Python", "PyTorch", "TensorFlow", "C++"]
+  },
+  {
+    "name": "Research Areas",
+    "keywords": ["Multi-Agent Systems", "Graph Neural Networks", "LLM Reasoning", "Distributed Systems"]
+  }
+],
   "languages": [],
-  "interests": [],
+  "interests": [
+  {
+    "name": "Graph-Driven Multi-Agent Systems",
+    "keywords": ["agent collaboration", "graph reasoning", "heterogeneous reasoning"]
+  },
+  {
+    "name": "Efficient LLM Inference",
+    "keywords": ["edge computing", "task scheduling", "token efficiency"]
+  }
+],
   "references": [],
   "publications": [
     {
