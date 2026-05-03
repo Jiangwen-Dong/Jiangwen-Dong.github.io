@@ -280,6 +280,45 @@ a:hover {
 }
 
 /* ========================================
+   Publications Archive Page
+   ======================================== */
+
+.archive__item {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.archive__item:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.archive__item-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.archive__item-title a {
+  color: var(--color-text-primary);
+}
+
+.archive__item-excerpt {
+  font-size: 0.9rem;
+  color: var(--color-text-body);
+  line-height: 1.6;
+}
+
+.page__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--color-text-primary);
+}
+
+/* ========================================
    CV Page
    ======================================== */
 
@@ -376,11 +415,28 @@ a:hover {
     gap: 0.75rem;
   }
 
+  .hero-section {
+    min-height: auto;
+    padding: 6rem 0 4rem;
+  }
+
   .hero-section h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero-section .subtitle {
     font-size: 1rem;
+  }
+
+  .hero-content > div {
+    max-width: 100% !important;
+  }
+
+  #hero-graph-canvas {
+    display: none;
+  }
+
+  .section {
+    padding: 3rem 0;
   }
 }
