@@ -71,7 +71,7 @@ redirect_from:
     </div>
 
     <div class="pub-card">
-      <div class="pub-venue-badge">ICDCS 2026</div>
+      <div class="pub-venue-badge">ICML 2026</div>
       <div class="pub-content">
         <h3><a href="/publication/2026-hybridflow">HybridFlow: Adaptive Task Scheduling for Fast and Token-Efficient LLM Inference in Edge-Cloud Collaboration</a></h3>
         <p class="pub-authors"><span class="highlight">Jiangwen Dong</span>, Jiayu Li, Wanyu Lin</p>

@@ -8,7 +8,7 @@ I develop graph-driven multi-agent systems that enable efficient, adaptive, and 
 
 ## Research Areas
 
-<div class="research-grid" style="margin-top: 2rem;">
+<div class="research-grid research-page-grid" style="margin-top: 2rem;">
   <div class="research-card">
     <div class="research-card-icon">🕸️</div>
     <h3>Structured Reasoning</h3>
@@ -27,7 +27,7 @@ I develop graph-driven multi-agent systems that enable efficient, adaptive, and 
     <div class="research-card-icon">⚡</div>
     <h3>Efficient Distributed Inference</h3>
     <p>Edge–cloud collaboration enables efficient LLM inference by distributing computation across heterogeneous devices. I design adaptive scheduling and token-efficient strategies that minimize latency while respecting resource constraints at the edge.</p>
-    <p style="margin-top: 1rem; font-size: 0.85rem;"><strong>Related:</strong> <a href="/publication/2026-hybridflow">HybridFlow (ICDCS 2026)</a></p>
+    <p style="margin-top: 1rem; font-size: 0.85rem;"><strong>Related:</strong> <a href="/publication/2026-hybridflow">HybridFlow (ICML 2026)</a></p>
   </div>
 
   <div class="research-card">

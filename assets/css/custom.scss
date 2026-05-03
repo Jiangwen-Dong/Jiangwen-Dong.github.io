@@ -216,6 +216,17 @@ a:hover {
   word-break: keep-all;
 }
 
+/* Research page uses fewer columns since cards have more text */
+.research-page-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 767px) {
+  .research-page-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ========================================
    Publication Cards
    ======================================== */
