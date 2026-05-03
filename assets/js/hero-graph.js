@@ -7,7 +7,20 @@
   let nodes = [];
   const NODE_COUNT = 25;
   const CONNECTION_DISTANCE = 150;
-  const NODE_COLOR = 'rgba(0, 212, 170, 0.4)';
+
+  function getThemeColors() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      return {
+        node: 'rgba(0, 212, 170, 0.4)',
+        edgeBase: '0, 212, 170'
+      };
+    }
+    return {
+      node: 'rgba(0, 180, 150, 0.55)',
+      edgeBase: '0, 180, 150'
+    };
+  }
 
   function resize() {
     const rect = canvas.parentElement.getBoundingClientRect();
@@ -41,6 +54,7 @@
   }
 
   function draw() {
+    const colors = getThemeColors();
     ctx.clearRect(0, 0, width, height);
 
     // Draw edges
@@ -51,11 +65,11 @@
         const dist = Math.sqrt(dx * dx + dy * dy);
 
         if (dist < CONNECTION_DISTANCE) {
-          const opacity = (1 - dist / CONNECTION_DISTANCE) * 0.15;
+          const opacity = (1 - dist / CONNECTION_DISTANCE) * 0.2;
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
-          ctx.strokeStyle = `rgba(0, 212, 170, ${opacity})`;
+          ctx.strokeStyle = `rgba(${colors.edgeBase}, ${opacity})`;
           ctx.lineWidth = 1;
           ctx.stroke();
         }
@@ -66,7 +80,7 @@
     nodes.forEach(node => {
       ctx.beginPath();
       ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
-      ctx.fillStyle = NODE_COLOR;
+      ctx.fillStyle = colors.node;
       ctx.fill();
     });
   }
@@ -85,4 +99,14 @@
     resize();
     initNodes();
   });
+
+  // Watch for theme changes
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.attributeName === 'data-theme') {
+        // Theme changed - colors will update on next draw
+      }
+    });
+  });
+  observer.observe(document.documentElement, { attributes: true });
 })();
