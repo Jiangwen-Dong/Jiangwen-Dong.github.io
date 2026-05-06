@@ -114,11 +114,11 @@ a:hover {
 }
 
 .author__avatar img {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 15%;
   border: 3px solid var(--color-teal);
   box-shadow: var(--shadow-lg), 0 0 0 4px rgba(0, 212, 170, 0.1);
   transition: all var(--transition-base);
