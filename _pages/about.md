@@ -25,4 +25,4 @@ My work integrates three core areas:
 ## Education
 
 - **2024–Present** — PhD in Computing, The Hong Kong Polytechnic University
-- **2020–2024** — BEng, [Your previous institution]
+- **2020–2024** — BEng, Zhejiang University
