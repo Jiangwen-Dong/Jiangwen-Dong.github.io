@@ -181,6 +181,21 @@ a:hover {
   color: var(--color-teal);
 }
 
+/* Visitor Map (ClustrMaps) */
+.visitor-map {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-card-border);
+}
+
+.visitor-map img {
+  width: 100%;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-sm);
+  display: block;
+  background: var(--color-card-bg);
+}
+
 /* ========================================
    Page Content
    ======================================== */
