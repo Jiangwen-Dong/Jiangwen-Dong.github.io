@@ -232,8 +232,8 @@ a:hover {
 }
 
 .hero-profile img {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--color-teal);
@@ -651,10 +651,11 @@ a:hover {
   }
 
   .hero-profile img {
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
   }
 }
+
 
 @media (max-width: 767px) {
   .research-grid {
@@ -684,8 +685,8 @@ a:hover {
   }
 
   .hero-profile img {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
   }
 
   #hero-graph-canvas {
