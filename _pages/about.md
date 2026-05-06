@@ -11,8 +11,13 @@ redirect_from:
 <div class="hero-section">
   <div class="hero-content" style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 2rem; width: 100%;">
     <div class="hero-inner">
-      <div style="max-width: 60%;">
-        <h1>Jiangwen Dong</h1>
+      <div style="max-width: 65%;">
+        <div class="hero-title-row">
+          <h1>Jiangwen Dong</h1>
+          <div class="hero-profile">
+            <img src="/images/pic.jpg" alt="Jiangwen Dong profile photo">
+          </div>
+        </div>
         <p class="subtitle">PhD Student · PolyU · Graph-Driven Multi-Agent Systems</p>
         <p class="mission">I develop graph-driven multi-agent systems that enable efficient, adaptive, and distributed LLM reasoning across edge–cloud environments.</p>
         <div class="hero-social-links">
@@ -20,9 +25,6 @@ redirect_from:
           <a href="https://github.com/Jiangwen-Dong" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
           <a href="mailto:jiangwen.dong@connect.polyu.hk" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
-      </div>
-      <div class="hero-profile">
-        <img src="/images/pic.jpg" alt="Jiangwen Dong profile photo">
       </div>
     </div>
   </div>

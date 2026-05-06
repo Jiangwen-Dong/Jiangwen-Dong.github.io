@@ -224,6 +224,18 @@ a:hover {
 }
 
 /* Hero Profile Picture */
+.hero-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
+.hero-title-row h1 {
+  margin-bottom: 0;
+}
+
 .hero-profile {
   display: flex;
   align-items: center;
@@ -232,10 +244,11 @@ a:hover {
 }
 
 .hero-profile img {
-  width: 140px;
-  height: 140px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 15%;
   border: 3px solid var(--color-teal);
   box-shadow: var(--shadow-lg), 0 0 0 4px rgba(0, 212, 170, 0.1);
   transition: all var(--transition-base);
@@ -249,8 +262,8 @@ a:hover {
 .hero-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
+  justify-content: flex-start;
+  gap: 4rem;
   width: 100%;
 }
 
@@ -641,7 +654,7 @@ a:hover {
   }
 
   .hero-inner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 2rem;
     text-align: center;
   }
@@ -650,9 +663,13 @@ a:hover {
     max-width: 100% !important;
   }
 
+  .hero-title-row {
+    justify-content: center;
+  }
+
   .hero-profile img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -685,8 +702,8 @@ a:hover {
   }
 
   .hero-profile img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
 
   #hero-graph-canvas {
