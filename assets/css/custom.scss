@@ -188,12 +188,36 @@ a:hover {
   border-top: 1px solid var(--color-card-border);
 }
 
+.visitor-map a {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+}
+
 .visitor-map img {
   width: 100%;
   border: 1px solid var(--color-card-border);
   border-radius: var(--radius-sm);
   display: block;
   background: var(--color-card-bg);
+}
+
+/* ========================================
+   Sidebar / Content Divider
+   ======================================== */
+
+.sidebar {
+  border-right: 1px solid var(--color-card-border);
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 1023px) {
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--color-card-border);
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+  }
 }
 
 /* ========================================
