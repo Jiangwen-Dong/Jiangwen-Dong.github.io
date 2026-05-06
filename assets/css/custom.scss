@@ -107,8 +107,14 @@ a:hover {
    Sidebar / Author Profile
    ======================================== */
 
+.sidebar {
+  text-align: center;
+}
+
 .author__avatar {
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .author__avatar img {
@@ -132,9 +138,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
-.author__name {
+.sidebar .author__name {
   font-family: var(--font-heading);
   color: var(--color-text-primary);
   font-weight: 700;
@@ -142,7 +150,7 @@ a:hover {
   letter-spacing: -0.02em;
   text-align: center;
   width: 100%;
-  margin-bottom: 0.3rem;
+  margin: 10px 0 0.3rem 0;
 }
 
 .author__bio {
@@ -152,6 +160,25 @@ a:hover {
   text-align: center;
   width: 100%;
   line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.author__urls-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author__urls {
+  text-align: center;
+}
+
+.author__urls li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
 }
 
 .author__urls-wrapper .social-icons a {
