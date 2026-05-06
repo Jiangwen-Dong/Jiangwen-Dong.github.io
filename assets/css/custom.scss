@@ -129,6 +129,9 @@ a:hover {
 
 .author__content {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .author__name {
@@ -137,12 +140,18 @@ a:hover {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.02em;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.3rem;
 }
 
 .author__bio {
   font-family: var(--font-body);
   color: var(--color-text-body);
   font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
 }
 
 .author__urls-wrapper .social-icons a {
