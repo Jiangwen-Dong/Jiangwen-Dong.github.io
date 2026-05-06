@@ -40,7 +40,7 @@ I develop graph-driven multi-agent systems that enable efficient, adaptive, and 
 ## Active Projects
 
 - **S-DAG Framework** — Subject-based DAG for multi-agent reasoning. <span style="color: var(--color-teal); font-weight: 600;">Accepted at AAAI 2026</span>
-- **HybridFlow** — Adaptive edge-cloud LLM inference scheduling. <span style="color: var(--color-teal); font-weight: 600;">Accepted at ICDCS 2026</span>
+- **HybridFlow** — Adaptive edge-cloud LLM inference scheduling. <span style="color: var(--color-teal); font-weight: 600;">Accepted at ICML 2026</span>
 
 ## Collaborations
 

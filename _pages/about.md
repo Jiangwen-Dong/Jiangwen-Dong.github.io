@@ -10,14 +10,19 @@ redirect_from:
 <!-- Hero Section -->
 <div class="hero-section">
   <div class="hero-content" style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 2rem; width: 100%;">
-    <div style="max-width: 60%;">
-      <h1>Jiangwen Dong</h1>
-      <p class="subtitle">PhD Student · PolyU · Graph-Driven Multi-Agent Systems</p>
-      <p class="mission">I develop graph-driven multi-agent systems that enable efficient, adaptive, and distributed LLM reasoning across edge–cloud environments.</p>
-      <div class="hero-social-links">
-        <a href="https://scholar.google.com/citations?user=Kl-dTYAAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        <a href="https://github.com/Jiangwen-Dong" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="mailto:jiangwen.dong@connect.polyu.hk" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <div class="hero-inner">
+      <div style="max-width: 60%;">
+        <h1>Jiangwen Dong</h1>
+        <p class="subtitle">PhD Student · PolyU · Graph-Driven Multi-Agent Systems</p>
+        <p class="mission">I develop graph-driven multi-agent systems that enable efficient, adaptive, and distributed LLM reasoning across edge–cloud environments.</p>
+        <div class="hero-social-links">
+          <a href="https://scholar.google.com/citations?user=Kl-dTYAAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://github.com/Jiangwen-Dong" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:jiangwen.dong@connect.polyu.hk" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-profile">
+        <img src="/images/pic.jpg" alt="Jiangwen Dong profile photo">
       </div>
     </div>
   </div>

@@ -223,6 +223,37 @@ a:hover {
   opacity: 1;
 }
 
+/* Hero Profile Picture */
+.hero-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-teal);
+  box-shadow: var(--shadow-lg), 0 0 0 4px rgba(0, 212, 170, 0.1);
+  transition: all var(--transition-base);
+}
+
+.hero-profile img:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-lg), 0 0 0 6px rgba(0, 212, 170, 0.15);
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+}
+
 #hero-graph-canvas {
   position: absolute;
   top: 0;
@@ -420,6 +451,47 @@ a:hover {
 }
 
 /* ========================================
+   Publication Detail Page Figures
+   ======================================== */
+
+.pub-figure {
+  margin: 2rem 0;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: all var(--transition-base);
+}
+
+.pub-figure:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(0, 212, 170, 0.15);
+}
+
+.pub-figure img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+.pub-figure-caption {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text-body);
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.pub-figure-label {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  font-style: normal;
+  margin-right: 0.3rem;
+}
+
+/* ========================================
    Publications Archive Page
    ======================================== */
 
@@ -567,6 +639,21 @@ a:hover {
   .hero-section h1 {
     font-size: 2.5rem;
   }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-content > div:first-child {
+    max-width: 100% !important;
+  }
+
+  .hero-profile img {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -594,6 +681,11 @@ a:hover {
 
   .hero-content > div {
     max-width: 100% !important;
+  }
+
+  .hero-profile img {
+    width: 130px;
+    height: 130px;
   }
 
   #hero-graph-canvas {
