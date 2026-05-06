@@ -588,13 +588,7 @@ a:hover {
    ======================================== */
 
 .page__footer {
-  background: var(--color-navy);
-  color: var(--color-text-light);
-  font-family: var(--font-body);
-}
-
-.page__footer a {
-  color: var(--color-teal);
+  display: none;
 }
 
 /* ========================================
